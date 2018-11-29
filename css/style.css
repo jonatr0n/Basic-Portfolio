@@ -1,41 +1,49 @@
 /* Universal code for all pages */
 
 body {
-    background-color: rgb(208, 245, 219);
+    /* background-color: #3a4660; */
+    background-image: linear-gradient(#3a4660, #e9e1da, #3a4660);
     margin: 25px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .boxed-content {
-    border-color: #cccccc;
-    background-color:white;
-    border-style:solid;
-    border-width:medium;
-    padding-left:40px;
-    padding-right:40px;
+    border-color: #ed8a63;
+    background-color: #d1bead;
+    border-style: solid;
+    border-width: medium;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 30px;
-    float:left;
-    display:block;
+    /* float: left; */
+    display: block;
     color: black;
-    overflow: auto; 
+    overflow: auto;
+    max-width: 940px;
     width: 940px;
+    /* position: relative; */
+    margin: auto;
 }
 
 header {
-    background: rgb(208, 245, 219);
+    background-color: #d1bead;
     color: black;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: black 3px solid;
-}    
+    border: #ed8a63 3px solid;
+    max-width: 970px;
+    width: 970px;
+    margin: auto;
+    
+}
 
 header a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-size:16px;
+    font-size: 16px;
 }
 
 header ul {
@@ -48,18 +56,19 @@ header li {
     display: inline;
     padding: 0 20px 20px 20px;
     position: relative;
-    top: -40px;
+    top: -48px;
     color: black;
+    background-color: #d1bead;
 }
 
- header nav {
-    float:right;
-    margin-top:10px;
+header nav {
+    float: right;
+    margin-top: 10px;
     color: black;
-    
 }
 
 /* Profile specific */
+
 #profile-img {
     width: 20%;
     height: 20%;
@@ -67,7 +76,9 @@ header li {
     display: block;
     padding-right: 40px;
 }
+
 /* Contact specific */
+
 .contact {
     margin: 0;
     padding: 0;
@@ -75,6 +86,7 @@ header li {
 }
 
 /* Portfolio specific */
+
 .p-img {
     width: 150px;
     height: 150px;
@@ -86,21 +98,25 @@ header li {
 }
 
 .p-title {
-    background: rgb(208, 245, 219);
-    border: 1px solid black;
+    border-color: #ed8a63;
+    background-color: #3a4660;
+    border-style: solid;
+    border-width: medium;
     z-index: 99;
     width: 150px;
     height: 40px;
     margin-top: -14px;
     margin-left: 10px;
     text-align: center;
+    color: white;
+    text-transform: uppercase;
 }
 
 .container {
     position: relative;
     content: "";
     clear: both;
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     width: 35%;
@@ -108,4 +124,10 @@ header li {
 
 .grid {
     width: 160px;
+}
+
+h1 {
+    margin-left: 30px;
+    padding-bottom: 10px;
+    
 }
